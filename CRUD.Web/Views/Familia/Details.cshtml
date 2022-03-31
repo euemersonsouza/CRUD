@@ -1,0 +1,46 @@
+﻿@model CRUD.Model.Familia
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AlunoModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Condominio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Condominio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Apto)
+        </dt>
+        <dd>
+            @Html.DisplayNameFor(model => model.Apto)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
